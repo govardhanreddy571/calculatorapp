@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> This is style css sheet</p>
+    <style>
+        div {
+            border: 1px salmon brown;
+            background-color: blueviolet;
+            color: brown;
+        }
+    </style>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object</h1>
+<h2>The Object.assign() Method</h2>
+<p id="demo"></p>
+<script>
+// Create Target Object
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+const person2 = {firstName: "Anne",lastName: "Smith"};
+Object.assign(person1, person2);
+let text = Object.entries(person1);
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const people ={
+    firstName:"Bhima",
+    lastName:"Reddy",
+    age:34,
+    eyeColor:"red"
+};
+const people1 ={firstName:"Chakali",lastName:"Varun"};
+Object.assign(people,people1);
+let text8 =Object.entries(people1);
+document.getElementById("demo").innerHTML =text8;
+</script> 
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<h2>JavaScript Validation</h2>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+<h2>Using individual padding properties</h2>
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+</body>
+</html>
+
+<html>
+<head>
+
+<p id="demo"></p>
+<style>
+div.ex1{
+    width: 200px;
+    background-color: yellowgreen;
+    box-sizing: border-box;
+}
+div.ex2{
+    width: 500px;
+    background-color: rebeccapurple;
+    padding: 30px;
+}
+</style>
+<body>
+<div class ="ex1">This is width 300px</div>
+<div class ="ex2"> This is width 500px</div>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript if .. else</h2>
+    <p>A time-based greeting:</p>
+    <p id="demo"></p>
+    <script>
+        const hour = new Date().getHours(); 
+        let greeting;
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+</html>
+<html>
+<head>
+ <body>
+<p id="demo"></p>
+<script>
+const hours =new Date().getHours();
+let greeting3;
+if (hour <19){
+    greeting3="Good Day";
+}else {
+    greeting3="Good Evening";
+}
+document.getElementById("demo").innerHTML=greeting3;
+</script>
+</head>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript if .. else</h2>
+<p>A time-based greeting:</p>
+<p id="demo"></p>
+<script>
+const time = new Date().getHours();
+let greeting4;
+if (time < 10) {
+  greeting4 = "Good morning";
+} else if (time < 20) {
+  greeting4 = "Good day";
+} else {
+  greeting4 = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting4;
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const time1 = new date().getHours();
+let greeting5;
+if (time<10){
+    greeting5 ="GooD Morning";
+}else  if (time1 < 20) {
+    greeting5= "GooD Day";
+} else {
+    greeting5 = "Good Evening";
+}
+document.getElementById("demo").innerHTML=greeting5;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<body>
+<h2>JavaScript switch</h2>
+<p id="demo"></p>
+<script>
+let text0;
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+    text0= "Soon it is Weekend";
+    break;
+  case 0:
+  case 6:
+    text0 = "It is Weekend";
+    break;
+  default:
+    text0 = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+let text5;
+switch (new Date().getDay()) {
+case 1:
+case 2 :
+text5="Soon its Weekend";
+break;
+default:
+text5="Looking Forward ti this Weekend";
+}
+document.getElementById("demo").innerHTML= text5;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<style>
+h1{
+    text-decoration: dashed;
+    text-decoration: overline;
+    text-decoration-color: brown;
+}
+h2{
+    text-decoration: line-through;
+    text-decoration: underline red double;
+    text-decoration-color: blueviolet;
+}
+h3{
+    text-decoration: underline;
+    text-decoration: solid;
+    text-decoration-color: aliceblue;
+}
+</style>
+<body>
+    <h1>This is Text text-decoration color</h1>
+    <h2> This is the text line color</h2>
+    <h3> This is the base less proff line</h3>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+<body>
+<h2>Link Button</h2>
+<a href="default.asp" target="_blank">This is a link</a>
+</body>
+</html>
+<html>
+<head>
+<p id="demo"></p>
+<style>
+a:link, a:visited{
+    text-decoration: dashed;
+    display: inline-block;
+    background-color: blue;
+    color: aquamarine;   
+}
+
+</style>
+<body>
+    <h2>Link Button</h2>
+    <a href="https://dqy00000fktbfma3-dev-ed.develop.lightning.force.com/lightning/page/home" target="_blank">This is a <link rel="stylesheet" href=""></a>
+</body>
+</body>
+</head>
+</html>
+<html>
+<head>
+<style>
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+<h1>Styling Lists With Colors</h1>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+</body>
+</html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+<h1>A Fancy Table</h1>
+<table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript For Loop</h2>
+<p id="demo"></p>
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const cites =[ "Anantapur","Bangalore","Chennai","Delhi","Mumbai","Kollakatha"];
+let text78 ="";
+for (let i=0; i< cites.length; i++){
+    text78 += cites[i] +"<br>";
+}
+document.getElementById("demo").innerHTML=text78;
+</script>
+</body>
+</head>
+</html>
+<html>
+<body>
+<h2>JavaScript For Loop</h2>
+<p id="demo"></p>
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i, len, text;
+for (i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const country =["Asia","Africa","India","Japan"];
+let ii, len1, text00;
+for(ii = 0,len1 = country.length, text00 =" "; ii < len; ii++) {
+ text += country[ii]+ "<br">;
+}
+document.getElementById("demo").innerHTML = text00;
+</script>
+</body>
+</head>
+</html>
+<html>
+<body>
+<h2>JavaScript let</h2>
+<p id="demo"></p>
+<script>
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  // some statements
+}
+document.getElementById("demo").innerHTML = i;
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+let a= 100;
+for (let a=0; a < 100; a++){
+
+}
+document.getElementById("demo").innerHTML = a;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<body>
+<h2>JavaScript For Loop</h2>
+<p id="demo"></p>
+<script>
+const cars1 = ["BMW", "Volvo", "Saab", "Ford"];
+let i1 = 2;
+let len11 = cars.length;
+let text11 = "";
+for (;  i < len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text11;
+</script>
+</body>
+</html>
+<html>
+<body>
+<h2>JavaScript break</h2>
+<p id="demo"></p>
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let text = "";
+list: {
+  text += cars[0] + "<br>"; 
+  text += cars[1] + "<br>"; 
+  break list;
+  text += cars[2] + "<br>"; 
+  text += cars[3] + "<br>"; 
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const vehical =["Cycle","Bicycle","Car","Motor"];
+let text88 ="";
+list1: {
+    text88 +=vehical[0]+ "<br>";
+    text88 +=vehical[1]+ "<br>";
+    break list1;
+    text88 += vehical[2]+ "<br>";
+    text88 += vehical[3]+ "<br>";
+}
+document.getElementById("demo").innerHTML =text88;
+</script>
+</body>
+</head>
+</html>
+<html>
+<body>
+<h1>JavaScript Iterables</h1>
+<h2>Iterate over a String</h2>
+<p id="demo"></p>
+<script>
+const name = "W3Schools";
+let text = ""
+for (const x of name) {
+  text += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const na ="GovardhanReddy";
+let text89 =""
+for (const x of na){
+    text89 += x +"<br>";
+}
+document.getElementById("demo").innerHTML =text89;
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Iterables</h1>
+<h2>Iterate over an Array</h2>
+<p id="demo"></p>
+<script>
+const letters = ["a","b","c"];
+let text = "";
+for (const x of letters) {
+  text += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+<html>
+<head>
+<boddy>
+<p id="demo"></p>
+<script>
+const lett =["aa","bb","cc","dd","ee"];
+let text000 ="";
+for (const x of lett){
+    text000 += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text000;
+</script>
+</boddy>
+</head>
+</html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<p>Being able to use objects as keys is an important Map feature:</p>
+<p id="demo"></p>
+<script>
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+const fruits = new Map();
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
+document.getElementById("demo").innerHTML = fruits.get(apples);
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const anger ={name: 'Anger'};
+const badam={ name: 'Badam'};
+const painapple ={name: 'Pineapple'};
+const fruits1 = new Map();
+fruits1.set(anger,450);
+fruits1.set(badam,550);
+fruits1.set(painapple,690);
+document.getElementById("demo").innerHTML =fruits1.get(painapple);
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Object Destructuring</h2>
+<p id="demo"></p>
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+let {lastName : name} = person;
+document.getElementById("demo").innerHTML = name;
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const pg ={
+    firstName:"Obleasu",
+    lastName: "Varun",
+    age:45
+};
+let {lastName : name1}=pg;
+document.getElementById("demo").innerHTML=name1;
+</script>
+</body>
+</head>
+</html>
+<html>
+<body>
+<h1>JavaScript Errors</h1>
+<h2>The RangeError</h2>
+
+<p>You cannot set the number of significant digits too high:</p>
+
+<p id="demo">
+
+<script>
+let num = 1;
+try {
+  num.toPrecision(500);
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+</style>
+</head>
+<body>
+<h2>Add a border to a table:</h2>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

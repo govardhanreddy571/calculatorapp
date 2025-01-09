@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-picture {
+    flex: 1;
+    text-align: center;
+}
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Profile Info */
+.profile-info {
+    flex: 3;
+    padding-left: 20px;
+}
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
+}
+.profile-info .stats {
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    color: #666;
+}
+.profile-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.posts-grid .post img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.posts-grid .post img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h1>JavaScript String</h1>
+    <h2>The concat() Method</h2>
+    
+    <p>The concat() method joins two or more strings:</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    let text1 = "Hello";
+    let text2 = "World!";
+    let text3 = text1.concat(" ",text2);
+    document.getElementById("demo").innerHTML = text3;
+    </script>
+    
+    </body>
+    </html>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo">String concat method</p>
+<script>
+    let page="My";
+    let page1="World";
+    let page3= page.concat(" ",page1);
+    document.getElementById("demo").innerHTML= page3;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h1>JavaScript String Methods</h1>
+    <h2>The split().Method</h2>
+    
+    <p id="demo"></p>
+    
+    <script>
+    let text = "Hello";
+    const myArr = text.split("");
+    
+    text = "";
+    for (let i = 0; i < myArr.length; i++) {
+      text += myArr[i] + "<br>"
+    }
+    document.getElementById("demo").innerHTML = text;
+    </script>
+    
+    </body>
+    </html>
+
+    <html>
+    <head>
+    <body>
+    <p id="demo"></p>
+    <script>
+        let mock = "Hai";
+        const myArr1 = mock.split("");
+        mock ="";
+        for (let i =0; i<myArr1.length; i++){
+            mock +=myArr[i]+"<br>"
+        }
+        document.getElementById("demo").innerText=mock;
+    </script>
+    </body>
+    </head>
+    </html>
+
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo"></p>
+
+<script>
+let text11 = "Please locate where 'locate' occurs!";
+let index = text11.indexOf("locate");
+document.getElementById("demo").innerHTML = index; 
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+    let spail = " My life is Enter Collispale";
+    let index1 = spail.indexOf("Enter");
+    document.getElementById("demo").innerHTML = index1
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+    let nill = "I am multiple times fails";
+    let index2 = nill.lastIndexOf("times",17);
+    document.getElementById("demo").innerHTML = index2;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<h1>The Text.Search Explain</h1>
+<script>
+let milk = "The cow is today is not giving milk";
+let index3 = text.search(/today/);
+document.getElementById("demo").innerHTML = index3;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text12 = "The rain in SPAIN stays mainly in the plain";
+const myArr12 = text12.match("ain");
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr12;
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+let text13 = "The Daily life is Today More Expences";
+const myArr14 = text13.match("ain");
+document.getElementById("demo").innerHTML = myArr.length+ " " + myArr14;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+let xy = new Date ("1970-01-03");
+document.getElementById("demo").innerHTML = Number(xy);
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Methods</h2>
+
+<p>The Number() method can convert a date to a number:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = new Date("1970-01-02");
+document.getElementById("demo").innerHTML = Number(x); 
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+ const  cars =["BMW","TATA","MARUTHI","VEGA"];
+ document.getElementById("demo").innerHTML = cars[2];
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const cars1=[];
+cars1[0]="Tesla";
+cars1[1]="Zebra";
+cars1[2]="Marties";
+document.getElementById("demo").innerHTML=cars1;
+</script>
+
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const cars2=new Array("Apple","Bat","Cat");
+document.getElementById("demo").innerHTML=cars2;
+</script>
+</body>
+</head>
+</html>
+
+<!--<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<script>
+const cars4 = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars4[0];
+</script>
+
+</body>
+</html>-->
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const state=["Arunachal","Bhatia","chikogo"];
+state  [0] ="Avaiar";
+document.getElementById("demo").innerHTML=state;
+
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const fruits =["avicar","bengal","citra","dolli"];
+document.getElementById("demo").innerHTML=fruits.toString();
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const animal=["Lion","male",25];
+document.getElementById("demo").innerHTML=animal[1];
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const school={firstname:"gova",lastname:"Reddy",age:34};
+document.getElementById("demo").innerHTML = school.lastname;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const mobile=["apple","berely","cityre","dolly"];
+let size =mobile.length;
+document.getElementById("demo").innerHTML=size;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const metro=["Bangalore","Chennai","Delhi","Mumbai"];
+document.getElementById("demo").innerHTML=metro[metro.length-1];
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const large=["Up","Mp","Rj","Ko"];
+let fLen =large.length;
+
+let text7 ="<ul>";
+    for(let i=0; i < fLen; i++ ){
+   text7+="<li>" + large[i] +"</li>";
+    }
+    text7 += "<ul>";
+        document.getElementById("demo").innerHTML = text7;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The forEach() Method</h2>
+
+<p>Call a function for each array element:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits0 = ["Banana", "Orange", "Apple", "Mango"];
+
+let text0 = "<ul>";
+fruits0.forEach(myFunction);
+text0 += "</ul>";
+
+document.getElementById("demo").innerHTML = text0;
+
+function myFunction(value) {
+  text0 += "<li>" + value + "</li>";
+} 
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const conti=["Asia","Afiria","Antrica","Australi"];
+let text8 = "<ul>";
+    conti.forEach(myFunction);
+    text8 +="<br>"
+document.getElementById("demo").innerHTML=text8;
+function myFunction(value) {
+    text8 += "<br>"+ value + "</li>";
+}
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const fruit = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruit;
+
+function myFunction() {
+  fruit[fruit.length] = "Lemon";
+  document.getElementById("demo").innerHTML = fruit;
+}
+</script>
+
+</body>
+</html>
+<html>
+<head>
+<body>
+<button onclick="myFunction()">fuckme</button>
+<p id="demo"></p>
+<script>
+const country=["india","Usa","Pakisathan","Nepal","Bhutan"];
+document.getElementById("demo").innerHTML=country;
+
+function myFunction(){
+    country[country.length]="Srilanka";
+    country.push("Srilanka");
+    document.getElementById("demo").innerHTML=country;
+}
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+var points = new Array(10,20,30,40,50);
+document .getElementById("demo").innerHTML=points;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+var point =new Array (40);
+document.getElementById("demo").innerHTML=point[0];
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+    const fruits11=["Apple","Banana","Citro","Dolly"];
+    document.getElementById("demo").innerHTML=Array.isArray(fruits11);
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const laptop1=["Air","Hp","Dell","fitro"];
+let laptop = laptop1[2];
+document.getElementById("demo").innerHTML=laptop1;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The map() Method</h2>
+
+<p>Create a new array by performing a function on each array element:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value) {
+  return value * 2;
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const num1 =[5,6,7,8,9,10];
+const num2= num1.map(myFunction);
+document.getElementById("demo").innerHTML =num2;
+function myFunction(value){
+    return value * 2;
+}
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const myArr15 = [1, 2, 3, 4, 5,6];
+const newArr = myArr15.flatMap(x => [x, x * 10]);
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const myArr8 =[2,4,5,6,8];
+const newArr1 = myArr8.flatMap(x=>[x,x*10]);
+document.getElementById("demo").innerHTML = newArr1;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const myArr0 = [1, 2, 3, 4, 5,6];
+const newArr0 = myArr0.flatMap(x => [x, x * 10]);
+document.getElementById("demo").innerHTML = newArr0;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Create a new array from all array elements that passes a test:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25,22];
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const numb =[45,67,89,90,25,54];
+const over55 = numb.filter(myFunction);
+document.getElementById("'demo").innerHTML=over55;
+
+function myFunction(value,index,array){
+    return value >55;
+}
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The reduce() Method</h2>
+
+<p>Find the sum of all numbers in an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers0 = [45, 4, 9, 16, 25];
+let sum = numbers0.reduce(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const numbe = [25,45,5];
+let sum1= numbe.reduce(myFunction);
+document.getElementById("demo").innerHTML=" The sum1 is"+ sum1;
+function myFunction(total,value,index,array){
+    return total + value;
+}
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The entries() method</h2>
+
+<p>entries() returns an Array Iterator object with key/value pairs:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits5.entries();
+
+for (let x of f) {
+  document.getElementById("demo").innerHTML += x + "<br>";
+}
+</script>
+<p>The entries() method is not supported in Internet Explorer 11 (or earlier).</p>
+</body>
+</html>
+"<hr>"
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const fru = ["Apples","Banaan","Mango","Orange"];
+const f1 = fru.entries();
+for (let x1 of f1){
+    document.getElementById("demo").innerHTML+=x1+ "<br>";
+}
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The keys() Method</h2>
+
+<p>Return an Array Iterator object with the keys of the array:</p>
+<p id="demo"></p>
+<script>
+    const fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+    const keys = fruits.keys();
+    let text9 = "";
+    for (let x of keys) {
+        text9 += x + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text9;
+</script>
+<p>Array.keys() is not supported in Internet Explorer.</p>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const metro1 =["Bangalore","Delhi","Chennai","Hyderabad"];
+const keys1 = metro1.keys1();
+let text6="";
+for (let x of keys1){
+    text6 += x +"<br>";
+}
+document.getElementById("demo").innerHTML =text6;
+</script>
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array:
+const cars4 = ["Saab", "Volvo", "BMW"];
+// Change an element:
+cars[0] = "Toyota";
+// Add an element:
+cars.push("Audi");
+// Display the Array:
+document.getElementById("demo").innerHTML = cars4; 
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const village =["Bukka","Sideny","Reddypalli","yemir"];
+village[0]="Centraljail";
+village.push("korapadu");
+document.getElementById("demo").innerHTML=village;
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const d =new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+document.getElementById("demo").innerHTML =d.toLocaleTimeString();
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const d1 = new Date();
+document.getElementById("demo").innerHTML = d1.toDateString();
+</script>
+
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+const d2 = new Date("2024-12-18");
+document.getElementById("demo").innerHTML=d;
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Comparison</h1>
+<h2>The () ? : Ternary Operator</h2>
+<p>Input your age and click the button:</p>
+<input id="age" value="18" />
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        let age = document.getElementById("age").value;
+        let voteable = (age < 18) ? "Too young":"Old enough";
+        document.getElementById("demo").innerHTML = voteable + " to vote.";
+    }
+</script>
+</body>
+</html>
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<input id="age1" value="18"/>
+<button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction(){
+        let age1 = document.getElementById("age1").value;
+        let voteable = (age1<18)? " To Young": "Old enough";
+        document.getElementById("demo").innerHTML = voteable + "to vote.";
+    }
+</script>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript if</h2>
+    <p>Display "Good day!" if the hour is less than 18:00:</p>
+    <p id="demo">Good Evening!</p>
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good day!";
+        }
+    </script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<p id="demo"></p>
+<script>
+if(new date().getHours() < 18) {
+    document.getElementById("demo").innerHTML="Good Evening";
+}
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+    <style>
+        div{background-color: aquamarine;
+             color: azure;
+            font-style: inherit;}
+    </style>
+</body>
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

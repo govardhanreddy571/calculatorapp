@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width:33%;
+}
+</style>
+</head>
+<body>
+
+<h1>Flexbox Example</h1>
+
+<p>Align three DIV elements side by side.</p>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
+
+<!--<html>
+<head>
+<style>
+    .city{
+        margin: 20px;
+        padding: 20px;
+        background-color: aqua;
+        color: white;
+        border: 2px solid black;
+
+    }
+    
+</style>
+<body>
+<div class="city">
+    <h1>This class attribute</h1>
+    <p>I am  creating in website page</p>
+</div>
+
+<div class="city">
+    <h2>This is importent</h2>
+    <p2>This is the very critical situations</p2>
+</div>
+
+</body>
+</head>
+</html>-->
+
+<html>
+<head>
+<style>
+.city{
+    background-color: forestgreen;
+    color: white;
+    padding: 20px;
+}
+</style>
+<body>
+<h1 class= "city">India</h1>
+<h2> India is the capital of Delhi</h2>
+
+<h1 class= "city">London</h1>
+<h2> London the very clean and large city</h2>
+
+<h1 class="city">paries</h1>
+<p>Paries in the ipill tower</p>
+</body>
+
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display ="none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+#myHeader{
+    background-color: aquamarine;
+    color: white;
+    margin: 2px;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</Header>
+<body>
+    <p> This is MYHeader</p>
+    <h1 id="myHeader">myHeader</h1>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p> This is the Button Element</p>
+<p> This is the Full Version Element</p>
+<h1 id="myHeader">Hellow World</h1>
+<button onclick="displayResult()">changetext</button>
+
+<script>
+function displayResult(){
+    document.getElementById("myHeader").innerHTML = "Hive a nice a day";
+}
+</script>
+
+
+</body>
+</head>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+</body>
+</html>-->
+
+<html>
+<body>
+<h1>Javascript to Extension to Date</h1>
+<button type="button"
+onclick="document.getElementById"("demo").innerHTML=Date()"> click to me Date and Time.</button>
+<p id="demo"></p>
+</body>
+</html>
+
+<html>
+<body>
+<h>Document  Tag</h>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = " Aadhya Reddy ,Disktha Reddy"
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<body>
+    <h1>This is  The Document.getelementid Tag</h1>
+    <p id="ira">Nani Reddy is living in Korrapadu in 5 th class study </p>
+    <script>
+    function myFunction(){
+        document.getElementById('ira').style.fontSize="55px";
+        document.getElementById('ira').style.color="red";
+        document.getElementById('ira').style.backgroundColor= "green";
+    }
+    </script>
+    <button type="button" onclick="myFunction()">clickme</button>
+</body>
+</head>
+</html>
+
+
+<html>
+<body>
+<p id="demo">AadhyaReddy</p>
+<script>
+function myFunction(){
+    document.getElementById("demo").style.fontSize="35px";
+    document.getElementById("demo").style.color="yellow";
+    document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+<button type="button" onclick="myFunction()">touchme</button>
+</body>
+</html>
+
+<html>
+<body>
+<h1>Image Hd Video</h1>
+<img src="c:\Users\HP\Downloads\sea image.jpg" alt="SeaImage" style="width: 200px;">
+</body>
+</html>
+
+<html>
+<head>
+<title>this title tag</title>
+<style>
+    body{background-color: deeppink;}
+    h1{color: aqua;}
+    p{color: antiquewhite;}
+</style>
+<body>
+    <h1>React is Very  Big Syllabus</h1>
+    <p>i am nt getting loader</p>
+</body>
+</head>
+</html>
+
+
+<html>
+<head>
+<title>This is the Title Explosuer Tag</title>
+<style>
+    body{background-color: green;}
+    h1{color: yellow;}
+    p{color: tan;}
+</style>
+<body>
+<p>Body Tag is covered in Element</p>
+<h1>This is the heading Tag</h1>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<style>
+*{box-sizing: border-box;}
+.menu{
+    float: left;
+    width: 20px;
+}
+.menuitem{
+    padding: 20px;
+    margin-top: 7px;
+    border-bottom: 1px solid green;
+
+}
+.main{
+    float: left;
+    width: 20px;
+    padding: 0% 20px;
+    overflow: hidden;
+}
+
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+@media  only screen and (max-width:500px) {
+    .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div style="background-color: darkgoldenrod; padding: 15px;">
+        <h1>This is the small link </h1>
+        <p> This browser is the top level performances</p>
+
+    </div>
+    <div style="overflow: auto;">
+        <div class="menu">
+        <div class="menuitem">History</div>
+        <div class="menuitem">location</div>
+        <div class="menuitem">Map</div>
+        <div class="menuitem">World</div>
+    </div>
+    <div class="main>"
+        <p>This is the work level performances stories</p>
+        </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Cinque Terre</h1>
+  <h3>Resize the browser window</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">The Walk</div>
+    <div class="menuitem">Transport</div>
+    <div class="menuitem">History</div>
+    <div class="menuitem">Gallery</div>
+  </div>
+
+  <div class="main">
+    <h2>The Walk</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <img src="c:\Users\HP\Downloads\sea1 image.jpeg" style="width:40%">
+    <img src="c:\Users\HP\Downloads\Photo.jpg" style="width: 40%">
+  </div>
+
+  <div class="right">
+    <h2>What?</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Where?</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>Price?</h2>
+    <p>The Walk is free!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+</body>
+</html>
+
+<html>
+<head>
+<nav>
+    <a href="https://www.w3schools.com/python/">python</a>|
+    <a href="https://www.onlinesbi.sbi/">sbi.com</a>|
+</nav>
+</head>
+</html>
+
+<html>
+<head>
+<style>
+    aside{
+        width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
+  text-align: center;
+}
+    
+</style>
+<body>
+<aside>This is The Aside link to confirm action</aside>
+<p>This is the Paragraph color website</p>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Emoji Example</h1>
+
+<h2>&#128522;</h2>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+    <input type="checkbox" name="vehicle" value="car" checked="checked" />
+<input type="text" name="lastname" disabled="disabled" />
+<input type="button" name="FirstName" value="Lorry" checked="checked"/>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<body>
+<form action="/action_page.php">
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="Govardhan"><br>
+<lable for="lname">Last Name:</lable><br>
+<input type="text" id="lname" name="lname" value="Reddy"><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</head>
+</html>
+
+
+<html>
+<head>
+<body>
+<lable for="fname">FirstName:</lable><br>
+<input type="text" id="fname" name="fname" value="Roy"><br>
+<input type="lname">LastName:</lable><br>
+<input type="text" id="lname" name="lname" value="Debric"><br>
+<input type="submit" value="submit">
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<lable for="fname">FirstName</lable>
+<input type="text" id="fname" name="fname" value="nani"><br>
+<input type="lname">LastName:</lable><br>
+<input type="text"
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<input type="radio" id="html" name="Fav-MetaData" value="html">
+<label for="html">html</label><br>
+<input type="email" id="css" name="Cascading style stylesheet" value="css"
+<label for ="css">css</label><br>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+
+
+<html>
+<head>
+<body>
+<input type="checkbox" id="Bus" name="DoubleBus" value="Owncar">
+<lable for="Bus">I have a car</lable><br>
+<input type="checkbox" id="Tractor" name="NewModel Tractor" value="Own car">
+<label for="New Tractor suite">I have a new Model Bought in recently</label>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The form novalidate attribute</h1>
+
+<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
+
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<lable for="email">Please inter your Email:</lable>
+<input type="email" id="email" name="Emailattachement"><br><br>
+<input type="submit">
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<label  for ="cars">Choose a car :</label>
+<select id="cars" names="cars">
+    <option value="Apple">Apple</option>
+    <option value="Beng">Beng</option>
+    <option value="Chikogo">Chikogo</option>
+    <option value="Diamond">Diamond</option>
+    <input type="submit">
+</select>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="https://www.google.com/chrome/">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+<html>
+<head>
+<body>
+<label for ="FirstName">FirstName</label>
+<label for ="LastName">LastName</label>
+
+</body>
+</head>
+</html>
+<br>
+
+<html>
+<head>
+<body>
+    <input type="text" id="username" name="username"><br>
+</body>
+</head>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Field</h2>
+
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+<form action="/action_page.php">
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<html>
+<head>
+<body>
+<script>
+function clickcounter() {
+    if (typeof(storage) !=="undefined") {
+        if (localStorage.clickcount){
+            localStorage.clickcount= Number(localStorage.clickcount)+1;
+        }
+         else{
+            localStorage.clickcount=1;
+        }   
+           document.getElementById("result").innerHTML="You have clicked the button"+ localStorage.clickcount+"time(s)."; 
+    } else{
+        document.getElementById("result").innerHTML="sorry ,your Browser does not support web storage...";
+    }
+}
+</script>
+</body>
+</head>
+</html>
+
+<html>
+<head>
+<body>
+<p time></p>
+</body>
+</head>
+</html>
+
+
+
+
+
+    
+    
+
