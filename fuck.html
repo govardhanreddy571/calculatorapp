@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #gameButton {
+            padding: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #timer, #score {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Game</h1>
+    <p id="timer">Time Left: 10</p>
+    <p id="score">Score: 0</p>
+    <button id="gameButton" onclick="incrementScore()" disabled>Click Me!</button>
+    <button onclick="startGame()">Start Game</button>
+
+    <script>
+        let score = 0;
+        let timeLeft = 10; // Game duration in seconds
+        let timer;
+
+        function startGame() {
+            score = 0;
+            timeLeft = 10;
+            document.getElementById("score").textContent = "Score: " + score;
+            document.getElementById("timer").textContent = "Time Left: " + timeLeft;
+            document.getElementById("gameButton").disabled = false;
+
+            // Countdown timer
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById("timer").textContent = "Time Left: " + timeLeft;
+
+                if (timeLeft <= 0) {
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function incrementScore() {
+            score++;
+            document.getElementById("score").textContent = "Score: " + score;
+        }
+
+        function endGame() {
+            clearInterval(timer);
+            document.getElementById("gameButton").disabled = true;
+            alert("Time's up! Your final score is: " + score);
+        }
+    </script>
+</body>
+</html>
